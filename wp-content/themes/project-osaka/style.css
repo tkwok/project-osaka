@@ -1,0 +1,742 @@
+/*
+Theme Name: Project Osaka
+Description: Pure WordPress Theme started 01.01.2019
+Author:  Tony Kwok
+Author URI:  https://www.tkwok.com
+Version:  0.0.1
+*/
+
+
+
+
+
+/*
+
+mobile <=> desktop - 991px
+
+gray - rgba(0,0,0,0.7)
+blue - 00b0bd
+orange - rgb(255, 102, 0);
+*/
+@font-face{
+  font-family: 'mplus-1p-regular';
+  src: url('fonts/mplus/mplus-1p-regular.eot');
+  src: url('fonts/mplus/mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/mplus/mplus-1p-regular.woff') format('woff'),
+       url('fonts/mplus/mplus-1p-regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'mplus-1p-bold';
+  src: url('fonts/mplus/mplus-1p-bold.eot');
+  src: url('fonts/mplus/mplus-1p-bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/mplus/mplus-1p-bold.woff') format('woff'),
+       url('fonts/mplus/mplus-1p-bold.ttf') format('truetype');
+}
+
+body {
+	padding: 1em;
+	font-family: 'mplus-1p-regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'mplus-1p-bold';
+}
+
+p {
+	font-family: 'mplus-1p-regular';
+}
+
+
+h5 {
+	margin-top: 1em;
+}
+
+nav {
+	padding: 2em 1em !important;
+}
+
+li {
+	list-style: none;
+	padding-left: 0;
+}
+
+nav.bg-light {
+	background-color: #fff !important;
+}
+
+a {
+	font-family: 'mplus-1p-regular';
+	color: rgba(0,0,0,0.7);
+}
+
+a:hover {
+	color: rgba(0,0,0,1);
+	text-decoration: none;
+
+}
+
+.background-white {
+	background-color: #fff;
+}
+
+.background-gray {
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+.navbar-toggler > navbar-toggler-icon {
+	color: red;
+}
+
+a.btn {
+	font-size: 1rem;
+	padding: 0.3em 1.5em;
+	border-radius: 0;
+}
+
+a.btn:focus,
+button:focus { outline: 0; }
+
+a.btn:active {
+	background-color: red;
+}
+
+
+a.btn-warning.inverse {
+	background-color: rgba(0,0,0,0);
+	color: #fff;
+	border-color: #fff;
+}
+
+a.btn-warning.inverse:hover {
+	background-color: #fff;
+	color: rgba(0,0,0,.7);
+	border-color: #fff;
+}
+
+a.btn-warning {
+	color: rgba(0,0,0,.5);
+	border-color: rgba(0,0,0,.5);
+	background-color: #fff;
+}
+
+a.btn-warning:hover {
+	color: #fff;
+	border-color: rgba(0,0,0,.7);
+	background-color: rgba(0,0,0,.7);
+}
+
+a.btn-primary {
+	background-color: rgba(0,176,189,0.7);
+	border-color: rgba(0,176,189,0.7);
+	color: #fff;
+}
+
+a.btn-primary:hover {
+	background-color: rgba(0,176,189,1);
+	border-color: rgba(0,176,189,1);
+	color: #fff;
+}
+
+.btn-warning:active {
+		background-color: #fff !important;
+}
+
+.acf-button .af-submit-button {
+	background-color: #fff;
+}
+
+.dropdown-menu,
+.navbar-toggler {
+	border: 0;
+	border-radius: 0;
+}
+
+
+a.dropdown-item:hover {
+	background-color: #fff;
+}
+
+
+.nav-link {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #00b0bd;
+}
+
+.dropdown-menu-center {
+  right: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+
+.blog-thumb {
+	min-height: 10rem;
+	padding: 1rem;
+}
+
+.blog-thumb-row {
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.container-padding {
+	padding: 2rem;
+}
+
+footer {
+	background-color: #aaa;
+	color: #fff;
+}
+
+.jumbotron-hero {
+	border-radius: 0;
+}
+
+.three-columns .btn,
+.two-columns-with-image-text .btn {
+		margin-top: 1em;
+}
+
+.transparent-button-white {
+	background-color: unset;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+a.transparent-button-white:hover {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #fff;
+}
+
+.footer-link-title {
+	font-family: 'mplus-1p-regular';
+}
+
+a.footer-link {
+	color: #fff;
+}
+
+
+a.footer-link:hover {
+	color: #222;
+}
+
+.background-animated-gradient {
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+
+.container-black-border {
+	border: 1px solid #000;
+}
+
+
+.blog-thumb-item {
+	background-color: #D3D3D3;
+}
+
+.blog-thumb-image-container {
+	padding: 0;
+}
+
+
+.section-container {
+	min-height: 16em;
+}
+
+
+.circle-base {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 100px;
+    height: 100px;
+    background: #ff6600;
+}
+
+.circle-base .date {
+	text-align: center;
+	font-size: 3.5rem;
+	color: #fff;
+	margin-top: -20px;
+}
+
+.circle-base .day {
+	text-align: center;
+	margin-top: -17px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.circle-base .month {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.container-techblog-feature img {
+	width: 100%;
+	height: auto;
+}
+
+.container-techblog-feature-paragraph {
+	padding: 2em 1em;
+}
+
+.row-techblog-author {
+	padding: 1em 0;
+}
+
+.techblog-tag {
+	display: inline-block;
+	padding-top: 1em;
+}
+
+.techblog-tag a {
+	padding: 3px 10px;
+	margin-right: 0.5rem;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+}
+
+.techblog-tag a:hover {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.techblog-single-paragraph p {
+	font-size: 1rem;
+}
+
+
+.section-header {
+	padding: 1em;
+}
+
+.container-module {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.container-module h3 {
+	padding: 0;
+}
+
+.container-module h5 {
+	padding: 0 0 1em;
+}
+
+.container-module .container-cta {
+	padding: 1em 0 0;
+}
+
+.main-navigation ul li {
+	width: 100%;
+}
+
+ul#menu-main-footer-menu {
+	padding-left: 0;
+}
+
+footer a {
+	color: #ddd;
+}
+
+footer .footer-social-icon {
+	padding: 0 0.5em 0 0;
+}
+
+.module-hero-with-cta h1,
+.module-hero-with-cta p {
+	color: #fff;
+}
+
+#value {
+    font-size: 50px;
+}
+
+.image-cropper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cropped {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+img.profile-photo {
+	border-radius: 50%;
+}
+
+
+.navbar-toggler {
+	padding: 0;
+}
+
+.container-module-image {
+	padding: 0 2em;
+}
+
+.page-hero {
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+	/* background-attachment: fixed; */
+	background-color: #aaa;
+	background-blend-mode: screen;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.first-word {
+	font-family: 'mplus-1p-regular';
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+	li.nav-item {
+		text-align: center;
+	}
+	.dropdown-menu {
+		position: inherit !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.dropdown:hover>.dropdown-menu {
+   		display: block;
+	}
+}
+
+
+.animated {
+	 -webkit-animation-duration: 1s;
+	 animation-duration: 1s;
+	 -webkit-animation-fill-mode: both;
+	 animation-fill-mode: both;
+}
+
+.animation-fadein-left {
+   -webkit-animation-name: fadeInLeft;
+   animation-name: fadeInLeft;
+}
+
+.animation-fadein-right {
+   -webkit-animation-name: fadeInRight;
+   animation-name: fadeInRight;
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(0);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(-20px);
+   }
+}
+
+
+
+
+
+
+
+
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: #fff;
+	color: #00b0bd;
+  padding: 0.5rem 2rem;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -6px;
+  background: #00b0bd;
+  z-index: -1;
+}
+
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 100px 0;
+	min-height: 70px;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  padding: 0 1rem;
+}
+.timeline-article p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  color: #242424;
+  line-height: 24px;
+  position: relative;
+	text-align: left;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #ff6600;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: #00b0bd;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 30px;
+  line-height: 25px;
+}
+.timeline-article .meta-date .month {
+  font-size: 18px;
+  line-height: 29px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Responsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+	.container {
+		max-width: none;
+	}
+
+	.image-cropper {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2em;
+	}
+
+	.container-text {
+		padding: 1em 0 !important;
+	}
+
+	.container-module {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.container-module-image {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.row {
+		text-align: center;
+	}
+}
+
+
+/* styles for '...' */
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
