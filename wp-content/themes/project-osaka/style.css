@@ -94,12 +94,14 @@ a:hover {
 	color: red;
 }
 
+input.btn,
 a.btn {
 	font-size: 1rem;
 	padding: 0.3em 1.5em;
 	border-radius: 0;
 }
 
+input.btn:focus, 
 a.btn:focus,
 button:focus { outline: 0; }
 
@@ -132,12 +134,14 @@ a.btn-warning:hover {
 	background-color: rgba(0,0,0,.7);
 }
 
+input.btn-primary,
 a.btn-primary {
 	background-color: rgba(0,176,189,0.7);
 	border-color: rgba(0,176,189,0.7);
 	color: #fff;
 }
 
+input.btn-primary:hover,
 a.btn-primary:hover {
 	background-color: rgba(0,176,189,1);
 	border-color: rgba(0,176,189,1);
