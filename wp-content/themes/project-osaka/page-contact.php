@@ -1,10 +1,14 @@
+
 <?php get_header();
   page_hero(array(
     'title' => get_field('page_title'),
     'subtitle' => get_field('page_description'),
     'hero_background_image' => get_field('page_hero_image')['url']
   ));
+
+  notification_bar(array('message' => 'A message text'));
 ?>
+
 <?php
 
   //response generation function
@@ -60,10 +64,6 @@
           else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
         }
     }
-
-
-  //else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
-
 ?>
 
 
@@ -122,43 +122,7 @@
 
 
 <script>
-  function addEvent(node, type, callback) {
-    if (node.addEventListener) {
-      node.addEventListener(type, function(e) {
-        callback(e, e.target);
-      }, false);
-    } else if (node.attachEvent) {
-      node.attachEvent('on' + type, function(e) {
-        callback(e, e.srcElement);
-      });
-    }
-  }
-
-  function shouldBeValidated(field) {
-    return (
-      !(field.getAttribute("readonly") || field.readonly) &&
-      !(field.getAttribute("disabled") || field.disabled) &&
-      (field.getAttribute("pattern") || field.getAttribute("required"))
-    );
-  }
-
-  function instantValidation(field) {
-    if (shouldBeValidated(field)) {
-      var invalid =
-        (field.getAttribute("required") && !field.value) ||
-        (field.getAttribute("pattern") &&
-          field.value &&
-          !new RegExp(field.getAttribute("pattern")).test(field.value));
-      if (!invalid && field.getAttribute("aria-invalid")) {
-        field.removeAttribute("aria-invalid");
-      } else if (invalid && !field.getAttribute("aria-invalid")) {
-        field.setAttribute("aria-invalid", "true");
-      }
-    }
-  }
-
   addEvent(document, "change", function(e, target) {
     instantValidation(target);
   });
-
 </script>

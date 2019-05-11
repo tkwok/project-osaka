@@ -36,7 +36,45 @@ function animateValue(id, start, end, duration) {
     }, stepTime);
 }
 
-//animateValue("value", 100, 25, 5000);
-jQuery("a[title='search']").on('click', () => {
-  console.log('meowww');
+/* form validation */
+function addEvent(node, type, callback) {
+  if (node.addEventListener) {
+    node.addEventListener(type, function(e) {
+      callback(e, e.target);
+    }, false);
+  } else if (node.attachEvent) {
+    node.attachEvent('on' + type, function(e) {
+      callback(e, e.srcElement);
+    });
+  }
+}
+
+function shouldBeValidated(field) {
+  return (
+    !(field.getAttribute("readonly") || field.readonly) &&
+    !(field.getAttribute("disabled") || field.disabled) &&
+    (field.getAttribute("pattern") || field.getAttribute("required"))
+  );
+}
+
+function instantValidation(field) {
+  if (shouldBeValidated(field)) {
+    var invalid =
+      (field.getAttribute("required") && !field.value) ||
+      (field.getAttribute("pattern") &&
+        field.value &&
+        !new RegExp(field.getAttribute("pattern")).test(field.value));
+    if (!invalid && field.getAttribute("aria-invalid")) {
+      field.removeAttribute("aria-invalid");
+    } else if (invalid && !field.getAttribute("aria-invalid")) {
+      field.setAttribute("aria-invalid", "true");
+    }
+  }
+}
+
+const notificationCloseLink = document.getElementById('notification-close');
+const notificationBar = document.getElementById('notification-bar');
+
+notificationCloseLink.addEventListener('click', () => {
+  notificationBar.style.display = "none";
 });
