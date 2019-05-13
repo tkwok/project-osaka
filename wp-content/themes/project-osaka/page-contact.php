@@ -13,8 +13,6 @@
 
   //response generation function
   $response = "";
-  //
-  // echo $_SERVER['REQUEST_METHOD'] == 'POST';
   //function to generate response
   function my_contact_form_generate_response($type, $message){
     global $response;
@@ -31,8 +29,6 @@
   $email_invalid   = "Email Address Invalid.";
   $message_unsent  = "Message was not sent. Try Again.";
   $message_sent    = "Thanks! Your message has been sent.";
-
-  //var_dump($_POST['submit']);
 
   if (isset($_POST['submitted'])) {
 
@@ -78,7 +74,7 @@
           $contactField = get_field('bio_contacts', $aboutPage->ID);
           if (!empty($contactField)) {
             foreach($contactField as $field) { ?>
-              <!-- <li><p><i class="<?php echo $field['icon_class']; ?>"></i> <?php echo $field['address']; ?></p></li> -->
+              <li><p><i class="<?php echo $field['icon_class']; ?>"></i> <?php echo $field['address']; ?></p></li>
             <?php }
           }
         }

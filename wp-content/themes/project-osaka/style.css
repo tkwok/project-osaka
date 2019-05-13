@@ -81,6 +81,14 @@ a:hover {
 
 }
 
+.navbar-nav:hover .nav-link:not(:hover) {
+  color: rgba(0,0,0,.2);
+}
+
+.dropdown-toggle::after {
+  border: 0;
+}
+
 .background-white {
 	background-color: #fff;
 }
@@ -101,7 +109,7 @@ a.btn {
 	border-radius: 0;
 }
 
-input.btn:focus, 
+input.btn:focus,
 a.btn:focus,
 button:focus { outline: 0; }
 
