@@ -168,10 +168,16 @@ a.btn-primary:hover {
 .navbar-toggler {
 	border: 0;
 	border-radius: 0;
+  top: 38px;
 }
 
 
+a.dropdown-item {
+  color: rgba(0,0,0,.5);
+}
+
 a.dropdown-item:hover {
+  color: #000;
 	background-color: #fff;
 }
 
