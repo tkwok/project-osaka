@@ -157,7 +157,7 @@ a.btn-primary:hover {
 }
 
 .btn-warning:active {
-		background-color: #fff !important;
+	background-color: #fff !important;
 }
 
 .acf-button .af-submit-button {
@@ -170,7 +170,6 @@ a.btn-primary:hover {
 	border-radius: 0;
   top: 38px;
 }
-
 
 a.dropdown-item {
   color: rgba(0,0,0,.5);
@@ -284,11 +283,11 @@ a.footer-link:hover {
 
 
 .circle-base {
-    border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-    width: 100px;
-    height: 100px;
-    background: #ff6600;
+  border-radius: 50%;
+  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+  width: 100px;
+  height: 100px;
+  background: #ff6600;
 }
 
 .circle-base .date {
