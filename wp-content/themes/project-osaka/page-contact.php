@@ -6,7 +6,7 @@
     'hero_background_image' => get_field('page_hero_image')['url']
   ));
 
-  notification_bar(array('message' => 'A message text'));
+  // notification_bar(array('message' => 'A message text'));
 ?>
 
 <?php
@@ -61,8 +61,6 @@
         }
     }
 ?>
-
-
 
 <div class="container">
   <div class="row">

@@ -4,7 +4,6 @@
   <div class="container text-center text-md-left">
     <div class="row">
       <div class="col-md-6 mt-md-0 mt-3">
-        <div>Logo</div>
         <p>© 2019 <?php bloginfo('name'); ?></p>
         <p><small>made with &hearts; in burlingame</small></p>
         <h6 class="text-uppercase">follow me</h5>

@@ -6,8 +6,8 @@
 ?>
 
 <section class="module-hero-with-cta">
-  <div class="jumbotron jumbotron-hero"
-    style="background-repeat: no-repeat; background-size: 100% auto;
+  <div class="jumbotron jumbotron-hero module-hero-container"
+    style="background-repeat: no-repeat; background-size: 100% auto; background-position-y: center;
     background-image: url('<?php echo $background["url"]; ?>')">
     <div class="container">
       <div class="row">
