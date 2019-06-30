@@ -72,9 +72,9 @@ function instantValidation(field) {
   }
 }
 
-const notificationCloseLink = document.getElementById('notification-close');
-const notificationBar = document.getElementById('notification-bar');
-
-notificationCloseLink.addEventListener('click', () => {
-  notificationBar.style.display = "none";
-});
+// const notificationCloseLink = document.getElementById('notification-close');
+// const notificationBar = document.getElementById('notification-bar');
+//
+// notificationCloseLink.addEventListener('click', () => {
+//   notificationBar.style.display = "none";
+// });

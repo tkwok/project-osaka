@@ -61,7 +61,7 @@
         }
     }
 ?>
-
+<!-- <i class="<?php echo $field['icon_class']; ?>"></i> -->
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-lg-6 text-center">
@@ -72,7 +72,7 @@
           $contactField = get_field('bio_contacts', $aboutPage->ID);
           if (!empty($contactField)) {
             foreach($contactField as $field) { ?>
-              <li><p><i class="<?php echo $field['icon_class']; ?>"></i> <?php echo $field['address']; ?></p></li>
+              <li><p><?php echo $field['address']; ?></p></li>
             <?php }
           }
         }
