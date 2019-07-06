@@ -9,8 +9,8 @@ module.exports = {
   mode: devMode ? 'development': 'production',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "/build/dist"
+    path: path.resolve(__dirname, 'dist/'),
+    publicPath: 'build/dist/'
   },
   module: {
     rules: [{
@@ -20,8 +20,19 @@ module.exports = {
         { loader: "css-loader" },
         { loader: "sass-loader", options: { sourceMap: devMode } }
       ]
-    }]
-  },
+    },
+    {
+      test: /\.(woff|woff2|ttf|otf|eot)$/,
+      use: [
+          {
+           loader: 'file-loader',
+           options: {
+             outputPath: '/fonts'
+           }
+         }
+       ]
+     }
+  ]},
   plugins: [
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',

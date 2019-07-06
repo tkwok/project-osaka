@@ -5,6 +5,19 @@
 	 animation-fill-mode: both;
 }
 
+.animation {
+	.fadein-left {
+	   -webkit-animation-name: fadeInLeft;
+	   animation-name: fadeInLeft;
+	}
+
+	.fadein-right {
+	   -webkit-animation-name: fadeInRight;
+	   animation-name: fadeInRight;
+	}
+}
+
+/* delete me after refactoring */
 .animation-fadein-left {
    -webkit-animation-name: fadeInLeft;
    animation-name: fadeInLeft;
@@ -14,6 +27,7 @@
    -webkit-animation-name: fadeInRight;
    animation-name: fadeInRight;
 }
+
 
 @keyframes fadeInLeft {
    0% {
@@ -35,4 +49,16 @@
       opacity: 1;
       transform: translateX(-20px);
    }
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
