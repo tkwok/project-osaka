@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'mplus-1p-regular';
+  src: url("/mplus-1p-regular.eot");
+  src: url("/mplus-1p-regular.eot?#iefix") format("embedded-opentype"), url("/mplus-1p-regular.woff") format("woff"), url("/mplus-1p-regular.ttf") format("truetype"); }
+
 body {
-  padding: 1em; }
+  padding: 1em;
+  font-family: 'mplus-1p-regular'; }
 
 h5 {
   margin-top: 1em; }

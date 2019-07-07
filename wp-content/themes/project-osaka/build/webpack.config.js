@@ -9,28 +9,28 @@ module.exports = {
   mode: devMode ? 'development': 'production',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/'),
-    publicPath: 'build/dist/'
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/build/dist'
   },
   module: {
     rules: [{
       test: /\.scss$/,
       use: [
         MiniCssExtractPlugin.loader,
-        { loader: "css-loader" },
-        { loader: "sass-loader", options: { sourceMap: devMode } }
-      ]
+        { loader: 'css-loader' },
+        { loader: 'resolve-url-loader'},
+        { loader: 'sass-loader', options: { sourceMap: devMode } }
+      ],
+      exclude: /node_modules/
     },
     {
       test: /\.(woff|woff2|ttf|otf|eot)$/,
-      use: [
-          {
-           loader: 'file-loader',
-           options: {
-             outputPath: '/fonts'
-           }
+      use: [{
+         loader: 'file-loader',
+         options: {
+           outputPath: './dist/fonts'
          }
-       ]
+       }]
      }
   ]},
   plugins: [

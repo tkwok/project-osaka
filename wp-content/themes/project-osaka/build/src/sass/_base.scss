@@ -1,11 +1,10 @@
-// @font-face{
-//   font-family: 'mplus-1p-regular';
-//   src: url('./fonts/mplus/mplus-1p-regular.eot');
-// }
-//   src: url('mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
-//        url('mplus-1p-regular.woff') format('woff'),
-//        url('mplus-1p-regular.ttf') format('truetype');
-// }
+@font-face{
+  font-family: 'mplus-1p-regular';
+  src: url('/mplus-1p-regular.eot');
+  src: url('/mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
+       url('/mplus-1p-regular.woff') format('woff'),
+       url('/mplus-1p-regular.ttf') format('truetype');
+}
 //
 // @font-face{
 // 	font-family: 'mplus-1p-bold';
@@ -17,7 +16,8 @@
 
 body {
 	padding: 1em;
-	// font-family: 'mplus-1p-regular';
+	font-family: 'mplus-1p-regular';
+	//, 'Lucida Grande', Tahoma, Sans-Serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
