@@ -7,7 +7,7 @@
   </head>
   <body <?php body_class(); ?>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="<?php echo site_url(); ?>">
           <?php bloginfo('name'); ?></a>
         <button class="navbar-toggler" type="button"

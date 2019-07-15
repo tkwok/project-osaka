@@ -1,27 +1,26 @@
 @font-face{
   font-family: 'mplus-1p-regular';
-  src: url('/mplus-1p-regular.eot');
-  src: url('/mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
-       url('/mplus-1p-regular.woff') format('woff'),
-       url('/mplus-1p-regular.ttf') format('truetype');
+  src: url('./mplus-1p-regular.eot');
+  src: url('./mplus-1p-regular.eot?#iefix') format('embedded-opentype'),
+       url('./mplus-1p-regular.woff') format('woff'),
+       url('./mplus-1p-regular.ttf') format('truetype');
 }
-//
-// @font-face{
-// 	font-family: 'mplus-1p-bold';
-// 	src: url('/fonts/mplus/mplus-1p-bold.eot');
-// 	src: url('/fonts/mplus/mplus-1p-bold.eot?#iefix') format('embedded-opentype'),
-// 	     url('/fonts/mplus/mplus-1p-bold.woff') format('woff'),
-// 	     url('/fonts/mplus/mplus-1p-bold.ttf') format('truetype');
-// }
+
+@font-face{
+	font-family: 'mplus-1p-bold';
+	src: url('./mplus-1p-bold.eot');
+	src: url('./mplus-1p-bold.eot?#iefix') format('embedded-opentype'),
+	     url('./mplus-1p-bold.woff') format('woff'),
+	     url('./mplus-1p-bold.ttf') format('truetype');
+}
 
 body {
 	padding: 1em;
-	font-family: 'mplus-1p-regular';
-	//, 'Lucida Grande', Tahoma, Sans-Serif;
+	font-family: 'mplus-1p-regular', 'Lucida Grande', Tahoma, Sans-Serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  // font-family: 'mplus-1p-bold';
+  font-family: 'mplus-1p-bold';
 }
 
 h5 {
@@ -29,7 +28,7 @@ h5 {
 }
 
 p {
-  // font-family: 'mplus-1p-regular';
+  font-family: 'mplus-1p-regular';
 }
 
 button {
@@ -39,7 +38,7 @@ button {
 }
 
 a {
-  // font-family: 'mplus-1p-regular';
+  font-family: 'mplus-1p-regular';
 	color: rgba(0,0,0,0.7);
 
   &:hover {
@@ -138,7 +137,7 @@ a {
 }
 
 input {
-	// font-family: 'mplus-1p-regular';
+	font-family: 'mplus-1p-regular';
 
 	.btn {
 		font-size: 1rem;
@@ -300,7 +299,7 @@ footer {
   height: 100px;
   background: #ff6600;
 
-	.data, .day, .month {
+	.date, .day, .month {
 		text-align: center;
 		color: #fff;
 		text-transform: uppercase;
@@ -383,7 +382,7 @@ footer {
 
 
 .footer-link-title {
-	// font-family: 'mplus-1p-regular';
+	font-family: 'mplus-1p-regular';
 }
 
 
@@ -416,6 +415,10 @@ footer {
 
 .container-techblog-feature-paragraph {
 	padding: 2em 1em;
+
+  ul li {
+    list-style-type: square;
+  }
 }
 
 .row-techblog-author {
@@ -466,7 +469,7 @@ ul#menu-main-footer-menu {
 }
 
 .first-word {
-	// font-family: 'mplus-1p-regular';
+	font-family: 'mplus-1p-regular';
 	font-size: 3rem;
 }
 
