@@ -10,6 +10,7 @@
       return '<div class="container-module-image"><img src="' . $image_url . '" width="100%"></div>';
     }
   }
+
   if (!function_exists('getTextContainer')) {
     function getTextContainer($title, $description, $primary_cta, $direction) {
       return '<div class="container-text" style="padding: 0 2em;"
@@ -34,10 +35,10 @@
   <div class="container container-module">
     <div class="row">
       <div class="col-xs-12 col-lg-6">
-        <?php echo $direction == 'left' ? getImageContainer($image['url']) : getTextContainer($title, $description, $primary_cta, $direction) ?>
+        <?php echo $direction == 'left' ? getImageContainer($image['sizes']['modules-two-columns-image']) : getTextContainer($title, $description, $primary_cta, $direction) ?>
       </div>
       <div class="col-xs-12 col-lg-6">
-        <?php echo $direction == 'right' ? getImageContainer($image['url']) : getTextContainer($title, $description, $primary_cta, $direction) ?>
+        <?php echo $direction == 'right' ? getImageContainer($image['sizes']['modules-two-columns-image']) : getTextContainer($title, $description, $primary_cta, $direction) ?>
       </div>
     </div>
   </div>

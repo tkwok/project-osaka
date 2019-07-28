@@ -8,7 +8,7 @@
       <p><?php echo the_field('purpose'); ?></p>
     </div>
     <div class="col-sm-12 col-md-6">
-      <?php echo the_post_thumbnail('large','style=max-width:100%;height:auto;'); ?>
+      <?php echo the_post_thumbnail('single-work-image'); ?>
     </div>
   </div>
   <div class="row">

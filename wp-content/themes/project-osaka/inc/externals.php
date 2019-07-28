@@ -7,10 +7,6 @@
     wp_enqueue_script('primary-javascript',
       get_theme_file_uri('/build/dist/bundle.js'), array('jquery'), microtime(), true);
 
-    // wp_localize_script('primary-javascript', 'primaryData', array(
-    //     'root_url' => get_site_url()
-    //   ));
-
     wp_enqueue_style('bootstrap-css',
       '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
     wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css');

@@ -17,7 +17,7 @@
         the_post(); ?>
         <div class="col-xs-12 col-lg-4">
           <div style="border: 1px solid #000; border-radius: 4.8px; margin-bottom: 2em;">
-            <?php echo the_post_thumbnail('large','style=width:100%; max-height: 200px;'); ?>
+            <?php echo the_post_thumbnail('archive-work-thumbnail'); ?>
             <!-- <h6 style="position: absolute;top: 8px;left: 30px; color: #fff;">project</h6> -->
             <div style="margin: 1em;">
               <h3><?php the_field('title'); ?></h3>

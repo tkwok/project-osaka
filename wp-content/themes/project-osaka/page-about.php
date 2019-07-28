@@ -4,6 +4,8 @@
     'subtitle' => get_field('page_description'),
     'hero_background_image' => get_field('page_hero_image')['url']
   ));
+
+  //array('class' => 'cropped')
 ?>
 
 <div class="container">
@@ -15,7 +17,7 @@
   <div class="row">
     <div class="col-xs-12 col-lg-6 text-center">
       <div class="image-cropper">
-      <?php the_post_thumbnail('full', array('class' => 'cropped')); ?>
+      <?php the_post_thumbnail('about-image-thumbnail'); ?>
       </div>
     </div>
     <div class="col-xs-12 col-lg-6">
@@ -36,7 +38,7 @@
       $skillsArray = get_field('bio_skills');
       if ($skillsArray) {
       foreach($skillsArray as $skill) { ?>
-        <div class="col-xs-12 col-lg-<?php echo 12 / sizeof($skillsArray); ?> text-center">
+        <div class="col-xs-12 col-lg-<?php echo 12 / sizeof($skillsArray);?> text-center">
           <h5><?php echo $skill["title"]; ?></h5>
           <?php print_r($skill["image"]); ?>
           <p><?php echo $skill["description"]; ?></p>

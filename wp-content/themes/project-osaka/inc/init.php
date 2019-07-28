@@ -39,8 +39,11 @@ Techblog image (same as works image)
     add_image_size('section-hero-background', 0, 250, false);
     add_image_size('section-slider-image', 540, 317, false);
     add_image_size('archive-work-thumbnail', 0, 200, false);
+    add_image_size('single-work-image', 600, 999, false);
     add_image_size('single-techblog-work-image', 930, 0, false);
+    add_image_size('about-image-thumbnail', 340, 340, false);
 
+    add_image_size('modules-two-columns-image', 992, 0, false);
 
     // add_image_size('module-image-photo', 180, 160, false);
     //

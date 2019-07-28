@@ -5,7 +5,6 @@
     the_post(); ?>
 
     <div class="container">
-
       <div class="row">
           <div class="col-sm-12 col-lg-6">
             <h1><?php the_title(); ?></h1>
@@ -36,7 +35,7 @@
           </div>
 
         <div class="col-sm-12 col-lg-6 container-techblog-feature">
-          <?php the_post_thumbnail('full'); ?>
+          <?php the_post_thumbnail('archive-techblog-thumbnail'); ?>
         </div>
       </div>
       <div class="row">
