@@ -7,24 +7,28 @@
 }
 
 @font-face{
-	font-family: 'mplus-1p-bold';
-	src: url('./mplus-1p-bold.eot');
-	src: url('./mplus-1p-bold.eot?#iefix') format('embedded-opentype'),
-	     url('./mplus-1p-bold.woff') format('woff'),
-	     url('./mplus-1p-bold.ttf') format('truetype');
+  font-family: 'mplus-1p-bold';
+  src: url('./mplus-1p-bold.eot?#iefix') format('embedded-opentype'),
+  url('./mplus-1p-bold.woff') format('woff'),
+  url('./mplus-1p-bold.ttf') format('truetype');
 }
 
 body {
-	padding: 1em;
-	font-family: 'mplus-1p-regular', 'Lucida Grande', Tahoma, Sans-Serif;
+  font-family: 'mplus-1p-regular', 'Lucida Grande', Tahoma, Sans-Serif;
+  padding: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'mplus-1p-bold';
 }
 
 h5 {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 p {
@@ -255,6 +259,7 @@ footer {
 .navbar-nav {
 	&:hover {
 		color: rgba(0,0,0,.2);
+    font-weight: bold;
 	}
 
 	.nav-link:not(:hover) {
@@ -502,6 +507,10 @@ ul#menu-main-footer-menu {
 	  /* bg color = bg color under block */
 	  background: white;
 	}
+}
+
+.attachment-archive-work-thumbnail {
+  width: 100%;
 }
 
 /* responsive stuff, please refactor */

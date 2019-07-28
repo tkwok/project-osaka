@@ -5,14 +5,18 @@
 
 @font-face {
   font-family: 'mplus-1p-bold';
-  src: url(./216376f8d993a4d1aff219a3f7f27387.eot);
   src: url(./216376f8d993a4d1aff219a3f7f27387.eot) format("embedded-opentype"), url(./10cc0ba8ecc0bad1df99b622cc8c3e80.woff) format("woff"), url(./b35b88d464cad77cc94294b324a3019f.ttf) format("truetype"); }
 
 body {
-  padding: 1em;
-  font-family: 'mplus-1p-regular', 'Lucida Grande', Tahoma, Sans-Serif; }
+  font-family: 'mplus-1p-regular', 'Lucida Grande', Tahoma, Sans-Serif;
+  padding: 1em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'mplus-1p-bold'; }
 
 h5 {
@@ -161,7 +165,8 @@ footer {
   color: #fff; }
 
 .navbar-nav:hover {
-  color: rgba(0, 0, 0, 0.2); }
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: bold; }
 
 .navbar-nav .nav-link:not(:hover) {
   color: rgba(0, 0, 0, 0.2); }
@@ -345,6 +350,9 @@ ul#menu-main-footer-menu {
     /* bg color = bg color under block */
     background: white; }
 
+.attachment-archive-work-thumbnail {
+  width: 100%; }
+
 /* responsive stuff, please refactor */
 @media screen and (max-width: 991px) {
   li.nav-item {
@@ -520,9 +528,7 @@ ul#menu-main-footer-menu {
     display: none; } }
 
 .animated {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
 .animation .fadein-left {

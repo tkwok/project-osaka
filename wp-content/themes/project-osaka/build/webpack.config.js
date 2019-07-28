@@ -1,11 +1,19 @@
 const path = require('path'),
 MiniCssExtractPlugin = require("mini-css-extract-plugin"),
 OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
+UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
 devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   optimization: {
-    minimizer: [new OptimizeCssAssetsPlugin({})],
+    minimizer: [
+      new UglifyJsPlugin({
+        extractComments: true,
+        test: /.((js)?)(\?[a-z0-9]+)?$/i,
+        exclude: /\/node_modules/ }
+      ),
+      new OptimizeCssAssetsPlugin({})
+    ],
   },
   entry: {
     all: ['./src/js/index.js', './src/sass/main.scss']
