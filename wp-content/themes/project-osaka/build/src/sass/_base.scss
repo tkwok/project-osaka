@@ -515,7 +515,6 @@ ul#menu-main-footer-menu {
 
 /* responsive stuff, please refactor */
 @media screen and (max-width: 991px) {
-
 	li.nav-item {
 		text-align: center;
 	}
@@ -525,14 +524,12 @@ ul#menu-main-footer-menu {
 }
 
 @media screen and (min-width: 992px) {
-
 	.dropdown:hover>.dropdown-menu {
    		display: block;
 	}
 }
 
 @media only screen and (max-width: 991px) {
-
 	.container {
 		max-width: none;
 	}
@@ -548,8 +545,8 @@ ul#menu-main-footer-menu {
 	}
 
 	.container-module {
-		padding-top: 0;
-		padding-bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.container-module-image {
@@ -559,7 +556,6 @@ ul#menu-main-footer-menu {
 }
 
 @media only screen and (max-width: 767px) {
-
 	.row {
 		text-align: center;
 	}

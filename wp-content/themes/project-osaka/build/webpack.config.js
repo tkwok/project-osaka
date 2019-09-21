@@ -5,6 +5,11 @@ UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
 devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+	watch: devMode,
+	watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  },
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
